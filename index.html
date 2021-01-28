@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/stylesheet/cssreset.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/temp-render.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/top.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/middle.css">
@@ -25,19 +26,46 @@
     </div>
     <div class="outter-wrapper">
         <div>
-            <button onclick="instructionAppend('instructions-container');">INSTRUCTIONS</button>
-            <button id="start-button" onclick="startTraining('training');">START TRAINING</button>
+            <button class="home-button" onclick="instructionAppend('instructions-container');">INSTRUCTIONS</button>
+            <button  class="home-button" id="start-button" onclick="startTraining('training');">START TRAINING</button>
         </div>
         <div class="main-wrapper" id="training">
-    
             <div class="top" id="top">
-                <div class="random-input-container"></div>
-                <div class="timer-container"></div>
+                <div class="random-input-container" id="random-order"></div>
+                <div class="timer-container">
+                    <div class="timer" id="timer"></div>
+                </div>
             </div>
                 
             <div class="middle" id="middle">
-                <div class="menu-container"></div>
-                <div class="current-order-container"></div>
+                <div class="menu-container">
+                    <div class="menu-buttons-container">
+                        <button onclick="populateCategory(startersArray);" class="menu-button">Starters</button>
+                        <button onclick="populateCategory(greensArray);" class="menu-button">Greens</button>
+                        <button onclick="populateCategory(seafoodArray);" class="menu-button">Seafood</button>
+                        <button onclick="populateCategory(meatsArray);" class="menu-button">Meats</button>
+                        <button onclick="populateCategory(dessertsArray);" class="menu-button">Desserts</button>
+                        <button onclick="populateCategory(drinksArray);" class="menu-button">Drinks</button>
+                    </div>
+                     <div class="menu-items" id="menu-items">
+                        <div onclick="addToOrder('0');" class="item" id="0"></div>
+                        <div onclick="addToOrder('1');" class="item" id="1"></div>
+                        <div onclick="addToOrder('2');" class="item" id="2"></div>
+                        <div onclick="addToOrder('3');" class="item" id="3"></div>
+                        <div onclick="addToOrder('4');" class="item" id="4"></div>
+                        <div onclick="addToOrder('5');" class="item" id="5"></div>
+                        <div onclick="addToOrder('6');" class="item" id="6"></div>
+                        <div onclick="addToOrder('7');" class="item" id="7"></div>
+                        <div onclick="addToOrder('8');" class="item" id="8"></div>
+                        <div onclick="addToOrder('9');" class="item" id="9"></div>
+                        
+                    </div>
+                </div>
+                <div class="current-order-container">
+                    <div id="order-taken">
+
+                    </div>
+                </div>
             </div>
     
             <div class="bottom" id="bottom">
@@ -50,6 +78,9 @@
     <script src="/lib/logic/top-logic.js"></script>
     <script src="/lib/logic/middle-logic.js"></script>
     <script src="/lib/logic/bottom-logic.js"></script>
+    <script src="/lib/logic/categories.js"></script>
+    <script>
+    </script>
 </body>
 </html>
 
