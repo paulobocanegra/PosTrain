@@ -1,0 +1,24 @@
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    height: 60%;
+    width: 100%;
+    background-color: blue;
+}
+
+.menu-container{
+    height: 100%;
+    width: 68%;
+    background-color: white;
+    visibility: hidden;
+}
+
+.current-order-container{
+    height: 100%;
+    width: 30%;
+    background-color: white;
+    visibility: hidden;
+}
