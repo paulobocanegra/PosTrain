@@ -5,12 +5,12 @@
     margin-top: 2%;
     height: 19%;
     width: 85%;
-    background-color: blue;
 }
 
 .kitchen-order-container{
     height: 100%;
     width: 100%;
     background-color: white;
+    border-radius: 5px;
     /* visibility: hidden; */
 }

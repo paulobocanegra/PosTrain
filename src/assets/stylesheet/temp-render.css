@@ -3,10 +3,21 @@
     align-items: center;
     position: absolute;
     top: 25%;
-    right: 30%;
-    background-color: teal;
+    left: 20%;
+    background-color: black;
+    color: white;
     visibility: hidden;
     border-radius: 15px;
     padding: 40px;
+    border: 5px solid ;
 }
 
+.instructions-list > li {
+    font-size: 20px;
+    margin: 25px;
+}
+
+.instructions-list > li:first-child{
+    font-size: 25px;
+    font-weight: 900;
+} 
