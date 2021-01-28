@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="/src/assets/stylesheet/top.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/middle.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/bottom.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
     <title>POSTrain</title>
 </head>
 <body>
     <div class="landing-render">
         <div id="instructions-container">
-            <ul>
+            <ul class="instructions-list">
+                <li>Instructions:</li>
                 <li>One random word of an item included in the menu will appear at the top of screen</li>
                 <li>User will have a timer to look for the item through menu and add it to current order</li>
                 <li>Once all items required are done, "Order Ready" will display and User can send it</li>
@@ -60,10 +62,13 @@
                         <div onclick="addToOrder('9');" class="item" id="9"></div>
                         
                     </div>
+
                 </div>
                 <div class="current-order-container">
                     <div id="order-taken">
-
+                        <div class="order-taken-title">
+                            Ticket Number: 
+                        </div>
                     </div>
                 </div>
             </div>

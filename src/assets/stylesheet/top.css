@@ -39,6 +39,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    font-weight: 800;
     border-radius: 40px;
     color: white;
 }
@@ -50,23 +51,29 @@ body{
 }
 
 .timer{
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 85%;
     border: 1px solid black;
-    border-radius: 5px;
-    background-color: teal;
-    color: white;
+    border-radius: 25%;
+    border: 8px solid ;
+    background-color: black;
+    color: rgb(126,245,61);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    font-family: 'Orbitron';
+    font-weight: 800;
 }
 
 .home-button{
     height: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    background-color: rgb(218, 65, 5);
+    background-color: rgb(245,73,89);
     color: white;
     margin: 20px;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 20px;
 }
