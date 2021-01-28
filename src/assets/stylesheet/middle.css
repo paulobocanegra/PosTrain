@@ -13,12 +13,12 @@
     height: 100%;
     width: 68%;
     background-color: white;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .current-order-container{
     height: 100%;
     width: 30%;
     background-color: white;
-    visibility: hidden;
+    /* visibility: hidden; */
 }

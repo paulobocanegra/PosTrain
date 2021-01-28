@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/stylesheet/temp-render.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/top.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/middle.css">
     <link rel="stylesheet" href="/src/assets/stylesheet/bottom.css">
     <title>POSTrain</title>
 </head>
 <body>
-    <div class="main-wrapper">
-
-        <div class="top">
-            <div class="random-input-container"></div>
-            <div class="timer-container"></div>
+    <div class="landing-render">
+        <div id="instructions-container">
+            <ul>
+                <li>One random word of an item included in the menu will appear at the top of screen</li>
+                <li>User will have a timer to look for the item through menu and add it to current order</li>
+                <li>Once all items required are done, "Order Ready" will display and User can send it</li>
+                <li>At the bottom of the screen all order will be display, ✅ right and ❌ wrong</li>
+                <li>As game progresses the timer will decrease and amount of items required increases</li>
+                <li>If 3 orders are wrong, game is over and you can see the amount of tickets you did</li>
+                <li>The purpose is to increase users speed and sense of location of items in the current pos system</li>
+            </ul>
         </div>
-            
-        <div class="middle">
-            <div class="menu-container"></div>
-            <div class="current-order-container"></div>
-        </div>
-
-        <div class="bottom">
-            <div class="kitchen-order-container"></div>
-        </div>
-
     </div>
+    <div class="outter-wrapper">
+        <div>
+            <button onclick="instructionAppend('instructions-container');">INSTRUCTIONS</button>
+            <button id="start-button" onclick="startTraining('training');">START TRAINING</button>
+        </div>
+        <div class="main-wrapper" id="training">
+    
+            <div class="top" id="top">
+                <div class="random-input-container"></div>
+                <div class="timer-container"></div>
+            </div>
+                
+            <div class="middle" id="middle">
+                <div class="menu-container"></div>
+                <div class="current-order-container"></div>
+            </div>
+    
+            <div class="bottom" id="bottom">
+                <div class="kitchen-order-container"></div>
+            </div>
+    
+        </div>
+    </div>
+    <script src="/lib/logic/initialize-game.js"></script>
+    <script src="/lib/logic/top-logic.js"></script>
+    <script src="/lib/logic/middle-logic.js"></script>
+    <script src="/lib/logic/bottom-logic.js"></script>
 </body>
 </html>
 
