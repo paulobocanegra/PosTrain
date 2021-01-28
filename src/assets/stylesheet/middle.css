@@ -26,7 +26,10 @@
     margin: 15px;
 }
 .menu-button{
+    background-color:  rgb(170,98,245);
+    color: white;
     border: none;
+    border-radius: 5px;
     padding:15px;
     font-size: 20px;
 }
@@ -58,9 +61,10 @@
 
 .menu-items{
     display: flex;
-    height: 75%;
+    height: 97%;
     width: 75%;
     flex-direction: column;
+    margin-left: 2%;
 }
 
 .item{
@@ -68,4 +72,16 @@
     display: flex;
     flex-wrap: wrap;
     
+}
+
+.menu-items div{
+    background-color:rgb(245,216,110);
+    color: white;
+    font-size: 19px;
+    margin: 5px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
