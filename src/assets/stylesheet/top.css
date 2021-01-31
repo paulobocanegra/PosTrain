@@ -2,6 +2,8 @@ body{
     display: flex;
     justify-content: center;
     background-color: black;
+    
+
 }
 
 .outter-wrapper{
@@ -26,46 +28,117 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
     height: 15%;
     width: 100%;
+    
 }
 
 .random-input-container{
     height: 50%;
     width: 60%;
-    margin-left: 4%;
+    margin: 2% 0% 0% 4%;
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
+    font-size: 70px;
     font-weight: 800;
-    border-radius: 40px;
+    border-radius: 30px;
     color: white;
+    font-family: 'Raleway', sans-serif;
+    border: 5px solid rgb(209 255 0);
+    animation: word 11s infinite;
+}
+
+@keyframes word {
+  from {font-size: 50px;}
+  50%  {font-size: 60px !important;} /* ignored */
+  to   {font-size: 80px;}
 }
 
 .timer-container{
-    height: 90%;
-    width: 10%;
-
+    height: 100%;
+    width: 11%;
+    margin: 2% 4% 0% 4%;
 }
 
 .timer{
-    height: 55%;
-    width: 55%;
-    border-radius: 20%;
-    border: 2px solid rgb(245,73,89);
+    height: 85%;
+    width: 85%;
+    border-radius: 25%;
+    border: 5px solid rgb(209 255 0);
     background-color: black;
-    color: rgb(126,245,61);
-    /* color: rgb(126,245,61); */
+    color: rgb(209 255 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 27px;
-    font-family: 'Orbitron';
+    font-size: 90px;
+    font-family: 'Codystar', cursive;
     font-weight: 800;
-    margin: 20px;
+    animation: blink 11s infinite;
+    -webkit-animation:  blink 11s infinite;
+}
+
+
+@keyframes blink{
+0% {
+    background-color: red;
+    border: 5px solid white;
+    color: white;
+}
+10% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+20% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+30% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+40% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+50% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+60% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+70% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+80% {
+    background-color: black;
+    color: rgb(209 255 0);
+    border: 5px solid rgb(209 255 0);
+}
+90% {
+    background-color: red;
+    border: 5px solid white;
+    color: white;
+}
+100% {
+    background-color: red;
+    border: 5px solid white;
+    color: white;
+}
+
 }
 
 .home-button{
