@@ -20,6 +20,7 @@ body{
     width: 1200px;
     height: 850px;
     background-color: rgb(37, 37, 37);
+    border-radius: 5px;
 }
 
 .top{
@@ -34,7 +35,7 @@ body{
 }
 
 .random-input-container{
-    height: 90%;
+    height: 50%;
     width: 60%;
     margin: 2% 0% 0% 4%;
     background-color: black;
@@ -148,6 +149,10 @@ body{
     color: white;
     margin: 20px;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 13px;
     padding: 20px;
+}
+
+.home-button:hover{
+    background-color: rgb(196, 47, 62);
 }
