@@ -3,13 +3,14 @@
     align-items: center;
     position: absolute;
     top: 25%;
-    left: 20%;
     background-color: black;
     color: white;
     visibility: hidden;
     border-radius: 15px;
     padding: 40px;
     border: 5px solid ;
+    height: 50%;
+    width: fit-content;
 }
 
 .instructions-list > li {
