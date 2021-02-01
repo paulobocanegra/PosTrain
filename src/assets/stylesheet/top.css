@@ -35,7 +35,7 @@ body{
 }
 
 .random-input-container{
-    height: 50%;
+    height: 85%;
     width: 60%;
     margin: 2% 0% 0% 4%;
     background-color: black;
@@ -43,7 +43,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 800;
     border-radius: 30px;
     color: white;
@@ -55,7 +55,7 @@ body{
 @keyframes word {
   from {font-size: 50px;}
   50%  {font-size: 60px !important;} /* ignored */
-  to   {font-size: 80px;}
+  to   {font-size: 70px;}
 }
 
 .timer-container{

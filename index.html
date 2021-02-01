@@ -50,25 +50,17 @@
             <div class="middle" id="middle">
                 <div class="menu-container">
                     <div class="menu-buttons-container">
-                        <button onclick="populateCategory(startersArray);" class="menu-button">Starters</button>
-                        <button onclick="populateCategory(greensArray);" class="menu-button">Greens</button>
-                        <button onclick="populateCategory(seafoodArray);" class="menu-button">Seafood</button>
-                        <button onclick="populateCategory(meatsArray);" class="menu-button">Meats</button>
-                        <button onclick="populateCategory(dessertsArray);" class="menu-button">Desserts</button>
-                        <button onclick="populateCategory(drinksArray);" class="menu-button">Drinks</button>
+                        <button onclick="populateCategories(startersArray);" class="menu-button">Starters</button>
+                        <button onclick="populateCategories(greensArray);" class="menu-button">Greens</button>
+                        <button onclick="populateCategories(seafoodArray);" class="menu-button">Seafood</button>
+                        <button onclick="populateCategories(meatsArray);" class="menu-button">Meats</button>
+                        <button onclick="populateCategories(dessertsArray);" class="menu-button">Desserts</button>
+                        <button onclick="populateCategories(drinksArray);" class="menu-button">Drinks</button>
                     </div>
-                     <div class="menu-items" id="menu-items">
-                        <div onclick="addToOrder('0');" class="item" id="0"></div>
-                        <div onclick="addToOrder('1');" class="item" id="1"></div>
-                        <div onclick="addToOrder('2');" class="item" id="2"></div>
-                        <div onclick="addToOrder('3');" class="item" id="3"></div>
-                        <div onclick="addToOrder('4');" class="item" id="4"></div>
-                        <div onclick="addToOrder('5');" class="item" id="5"></div>
-                        <div onclick="addToOrder('6');" class="item" id="6"></div>
-                        <div onclick="addToOrder('7');" class="item" id="7"></div>
-                        <div onclick="addToOrder('8');" class="item" id="8"></div>
-                        <div onclick="addToOrder('9');" class="item" id="9"></div>
+                    <div class="menu-items">
+                        <ul class="items">
                         
+                        </ul>
                     </div>
 
                 </div>
@@ -88,10 +80,10 @@
         </div>
     </div>
     <script src="/lib/logic/initialize-game.js"></script>
+    <script src="/lib/logic/categories.js"></script>
     <script src="/lib/logic/top-logic.js"></script>
     <script src="/lib/logic/middle-logic.js"></script>
     <script src="/lib/logic/bottom-logic.js"></script>
-    <script src="/lib/logic/categories.js"></script>
     <script>
     </script>
 </body>
