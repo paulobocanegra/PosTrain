@@ -132,3 +132,12 @@ font-family: 'Manrope', sans-serif;
 .order-taken-title{
     margin-bottom: 0.5em;
 }
+
+.sub-menu-items {
+    display: flex;
+    height: 90%;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3% 3% 3% 1%;
+}
