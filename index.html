@@ -17,6 +17,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
     <link rel="manifest" href="public/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+    
     <title>POSTrain</title>
 </head>
 <body>
@@ -43,7 +49,7 @@
             <div class="top" id="top">
                 <div class="random-input-container" id="random-order"></div>
                 <div class="timer-container">
-                    <div class="timer" id="timer"></div>
+                    <div class="time" id="timer"></div>
                 </div>
             </div>
                 
@@ -59,22 +65,34 @@
                     </div>
                     <div class="menu-items">
                         <ul class="items">
-                        
+                            <li>
+                                <div class="sub-menu-items"></div>
+                            </li>
                         </ul>
                     </div>
 
                 </div>
                 <div class="current-order-container">
                     <div id="order-taken">
-                        <div class="order-taken-title">
-                            Ticket Number: 
-                        </div>
+                        <div class="order-taken-title">Order #:</div>
+                            <ul class="items-ordered">New York Steak - medium rare</ul>
+                            <ul class="items-ordered"></ul>
+                            <ul class="items-ordered"></ul>
+                            <ul class="items-ordered"></ul>
+                            <ul class="items-ordered"></ul>
                     </div>
                 </div>
             </div>
     
             <div class="bottom" id="bottom">
-                <div class="kitchen-order-container"></div>
+                <div class="kitchen-order-container">
+                    <ul class="orders-sent">Ticket #1</ul>
+                    <ul class="orders-sent">Ticket #2</ul>
+                    <ul class="orders-sent">Ticket #3</ul>
+                    <ul class="orders-sent">Ticket #4</ul>
+                    <ul class="orders-sent">Ticket #5</ul>
+                    <ul class="orders-sent">Ticket #6</ul>
+                </div>
             </div>
     
         </div>
