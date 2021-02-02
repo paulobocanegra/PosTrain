@@ -43,9 +43,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 800;
-    border-radius: 30px;
+    border-radius: 10px;
     color: white;
     font-family: 'Raleway', sans-serif;
     border: 5px solid rgb(209 255 0);
@@ -53,9 +53,9 @@ body{
 }
 
 @keyframes word {
-  from {font-size: 50px;}
-  50%  {font-size: 60px !important;} /* ignored */
-  to   {font-size: 70px;}
+  from {font-size: 40px;}
+  50%  {font-size: 50px !important;} /* ignored */
+  to   {font-size: 60px;}
 }
 
 .timer-container{
@@ -67,7 +67,7 @@ body{
 .timer{
     height: 85%;
     width: 85%;
-    border-radius: 25%;
+    border-radius: 10px;
     border: 5px solid rgb(209 255 0);
     background-color: black;
     color: rgb(209 255 0);
