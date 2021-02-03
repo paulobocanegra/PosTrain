@@ -12,22 +12,22 @@
 .menu-container{
     height: 100%;
     width: 62%;
-    background-color: rgb(19, 19, 19);
+    /* background-color: rgb(19, 19, 19); */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     border-radius: 1%;
     justify-content: center;
-    margin: 0% 2% 0% 0%;
+    /* margin: 0% 2% 0% 0%; */
 }
 
 .menu-buttons-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 3% 0% 3% 3%;
+    /* margin: 3% 0% 3% 3%; */
     width: 20%;
-    height: 90%;
+    height: 100%;
     background-color: rgba(128, 128, 128, 0.5);
     border-right: 1px solid rgb(19, 19, 19);
     border-radius: 5px 0px 0px 5px;
@@ -36,7 +36,10 @@
 
 .first-button{
     border-radius: 5px 0px 0px 0px;
-    /* border-radius: 5px; */
+}
+
+.first-button:hover{
+    border-radius: 5px;
 }
 
 .menu-button{
@@ -91,11 +94,11 @@
 }
 .menu-items{
     display: flex;
-    height: 90%;
+    height: 100%;
     width: 35%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3% 0% 3% 0%;
+    /* margin: 3% 0% 3% 0%; */
     background-color: rgba(128, 128, 128, 0.5);
     border-right: 1px solid rgb(19, 19, 19);
 }
@@ -177,11 +180,11 @@
 
 .menu-items2{
     display: flex;
-    height: 90%;
+    height: 100%;
     width: 35%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3% 0% 3% 0%;
+    /* margin: 3% 0% 3% 0%; */
     background-color:rgba(128, 128, 128, 0.5);
     border-radius: 0px 5px 5px 0px;
     
@@ -194,14 +197,35 @@
     border-radius: 0px 5px 0px 0px;
 }
 
+.sub-items li:first-child:hover{
+    border-radius: 5px;
+}
+
 .sub-items li:last-child{
     border-radius: 0px 0px 5px 0px;
+}
+
+.sub-items li:last-child:hover{
+    border-radius: 5px;
 }
 
 .last-button{
     border-radius: 0px 0px 0px 5px;
 }
 
+.last-button:hover{
+    border-radius: 5px
+}
+
 .items li:last-child{
     border-radius: 0px 0px 5px 5px;
+}
+
+.items li:last-child:hover{
+    border-radius: 5px
+}
+
+.order-taken-title{
+    font-size: 15px;
+    /* font-weight: 1900; */
 }
