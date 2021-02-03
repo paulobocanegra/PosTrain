@@ -24,13 +24,13 @@
     height: 90%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3%;
+    margin: 3% 0% 3% 3%;
 }
 
 .menu-button{
 font-family: 'Manrope', sans-serif;
   display: flex;
-  background-color: rgba(128, 128, 128, 0.781);
+  background-color: rgba(15, 15, 15, 0.8);
   color: white;
   border: 1px solid;
   padding: 1.3rem 1.5rem;
@@ -82,10 +82,10 @@ font-family: 'Manrope', sans-serif;
 .menu-items{
     display: flex;
     height: 90%;
-    width: 30%;
+    width: 25%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3% 3% 3% 1%;
+    margin: 3% 0% 3% 0%;
 }
 
 .menu-items:hover{
@@ -94,7 +94,7 @@ font-family: 'Manrope', sans-serif;
 
 .new-item{
   display: flex;
-  background-color: rgb(85 85 85);
+ background-color: rgb(117 117 117);
   color: white;
   border: 1px solid;
   padding: 0.8rem 1.5rem;
@@ -148,7 +148,7 @@ font-family: 'Manrope', sans-serif;
 
 .sub-category{
   display: flex;
-  background-color: rgb(85 85 85);
+  background-color: rgba(128, 128, 128, 0.5);
   color: white;
   border: 1px solid;
   padding: 0.8rem 1.5rem;
