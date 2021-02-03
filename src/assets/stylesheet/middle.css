@@ -12,10 +12,10 @@
 .menu-container{
     height: 100%;
     width: 62%;
-    background-color: whitesmoke;
+    background-color: rgb(19, 19, 19);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 1%;
     justify-content: center;
     margin: 0% 2% 0% 0%;
@@ -23,33 +23,44 @@
 
 .menu-buttons-container{
     display: flex;
-    height: 90%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 3% 0% 3% 3%;
     width: 20%;
+    height: 90%;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-right: 1px solid rgb(19, 19, 19);
+    border-radius: 5px 0px 0px 5px;
+    /* border-bottom: 1px solid white; */
+}
+
+.first-button{
+    border-radius: 5px 0px 0px 0px;
+    /* border-radius: 5px; */
 }
 
 .menu-button{
-
-font-family: 'Manrope', sans-serif;
-  display: flex;
-  background-color: rgba(15, 15, 15, 0.8);
-  color: white;
-  border: 1px solid;
-  padding: 1.3rem 1.5rem;
-  font-size: 24px;
-  font-weight: bolder;
-  transition: all .3s;
-  cursor: pointer;
-  border-radius: 5px;
-  outline:none;
-
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    background-color: rgba(15, 15, 15, 0.8);
+    color: white;
+    border: 1px solid;
+    padding: 1.285rem 1.5rem;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: all .3s;
+    cursor: pointer;
+    /* border-radius: 5px 0px 0px 5px; */
+    outline: none;
+    height: 40px;
 }
 .menu-button:hover{
     transform: scale(1.03);
-    color: black;
+    color: rgb(19, 19, 19);
     background-color: rgb(209 255 0);
+    border-radius: 5px;
 }
 .menu-button:active{
     transform: scale(.98);
@@ -85,6 +96,8 @@ font-family: 'Manrope', sans-serif;
     flex-direction: column;
     justify-content: space-between;
     margin: 3% 0% 3% 0%;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-right: 1px solid rgb(19, 19, 19);
 }
 .menu-items:hover{
     cursor: pointer;
@@ -97,7 +110,7 @@ font-family: 'Manrope', sans-serif;
   padding: 0.8rem 1.5rem;
   transition: all .3s;
   cursor: pointer;
-  border-radius: 5px;
+  /* border-radius: 0px; */
   border-bottom: 4px solid lighten(gray, 70%);
 
 }
@@ -105,6 +118,7 @@ font-family: 'Manrope', sans-serif;
     transform: scale(1.03);
     color: black;
     background-color: rgb(209 255 0);
+    border-radius: 5px;
 }
 .new-item:active{
     transform: scale(.98);
@@ -147,14 +161,15 @@ font-family: 'Manrope', sans-serif;
   padding: 0.8rem 1.5rem;
   transition: all .3s;
   cursor: pointer;
-  border-radius: 5px;
-  border-bottom: 4px solid lighten(gray, 70%);
+  /* border-radius: 0px 5px 5px 0px; */
+  /* border-bottom: 4px solid lighten(gray, 70%); */
 
 }
 .sub-category:hover{
     transform: scale(1.03);
     color: black;
     background-color: rgb(209 255 0);
+    border-radius: 5px;
 }
 .sub-category:active{
     transform: scale(.98);
@@ -166,8 +181,27 @@ font-family: 'Manrope', sans-serif;
     width: 35%;
     flex-direction: column;
     justify-content: space-between;
-    margin: 3% 3% 3% 0%;
+    margin: 3% 0% 3% 0%;
+    background-color:rgba(128, 128, 128, 0.5);
+    border-radius: 0px 5px 5px 0px;
+    
 }
 .menu-items2:hover{
     cursor: pointer;
+}
+
+.sub-items li:first-child{
+    border-radius: 0px 5px 0px 0px;
+}
+
+.sub-items li:last-child{
+    border-radius: 0px 0px 5px 0px;
+}
+
+.last-button{
+    border-radius: 0px 0px 0px 5px;
+}
+
+.items li:last-child{
+    border-radius: 0px 0px 5px 5px;
 }
