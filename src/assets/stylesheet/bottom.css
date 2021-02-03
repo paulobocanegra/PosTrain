@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1.5%;
-    height: 15%;
-    width: 100%;
+    margin: 0% 0% 0% 2%;
+    height: 100%;
+    width: 12%;
 }
 
 .kitchen-order-container{
@@ -13,7 +13,7 @@
     background-color: whitesmoke;
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     /* visibility: hidden; */
@@ -25,8 +25,8 @@
     justify-content: center;
     margin: 0.5em;
     background-color: white;
-    width: 8%;
-    height: 80%;
+    width: 70%;
+    height: 15%;
     border: 1px solid rgba(128, 128, 128, 0.514);
     border-radius: 5px;
 }
