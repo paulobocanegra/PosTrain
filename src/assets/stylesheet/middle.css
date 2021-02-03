@@ -141,3 +141,28 @@ font-family: 'Manrope', sans-serif;
     justify-content: space-between;
     margin: 3% 3% 3% 1%;
 }
+
+.menu-items:hover{
+    cursor: pointer;
+}
+
+.sub-category{
+  display: flex;
+  background-color: rgb(85 85 85);
+  color: white;
+  border: 1px solid;
+  padding: 0.8rem 1.5rem;
+  transition: all .3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border-bottom: 4px solid lighten(gray, 70%);
+
+}
+.sub-category:hover{
+    transform: scale(1.03);
+    color: black;
+    background-color: rgb(209 255 0);
+}
+.sub-category:active{
+    transform: scale(.98);
+}
