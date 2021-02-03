@@ -41,7 +41,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 800;
     border-radius: 10px;
     color: white;
@@ -51,9 +51,9 @@ body{
 }
 
 @keyframes word {
-  from {font-size: 35px;}
-  50%  {font-size: 50px !important;} /* ignored */
-  to   {font-size: 55px;}
+  from {font-size: 30px;}
+  50%  {font-size: 40px !important;} /* ignored */
+  to   {font-size: 50px;}
 }
 
 .timer-container{
