@@ -1,10 +1,14 @@
 .bottom{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0% 0% 0% 3%;
     height: 100%;
     width: 12%;
+    left: 85%;
+    height: 600px;
+    bottom: 0px
 }
 
 .kitchen-order-container{
@@ -14,7 +18,7 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     /* visibility: hidden; */
@@ -24,7 +28,7 @@
     font-family: 'Manrope', sans-serif;
     display: flex;
     justify-content: center;
-    margin: 5%;
+    margin: 6%;
     background-color: white;
     width: 70%;
     height: 12%;
