@@ -47,14 +47,14 @@ body{
     color: white;
     font-family: 'Raleway', sans-serif;
     border: 5px solid rgb(209 255 0);
-    animation: word 11s infinite;
+    /* animation: word 11s infinite; */
 }
 
-@keyframes word {
+/* @keyframes word {
   from {font-size: 30px;}
-  50%  {font-size: 40px !important;} /* ignored */
+  50%  {font-size: 40px !important;} 
   to   {font-size: 50px;}
-}
+} */
 
 .timer-container{
     height: 100%;
@@ -75,11 +75,12 @@ body{
     font-family: 'ZCOOL QingKe HuangYou', cursive;  
     color: white;
     font-weight: 800;
-    animation: blink 11s infinite;
-    -webkit-animation: blink 11s infinite;
+    
+    /* animation: blink 11s infinite;
+    -webkit-animation: blink 11s infinite; */
 }
 
-@keyframes blink{
+/* @keyframes blink{
 0% {
     background-color: red;
     border: 5px solid white;
@@ -136,7 +137,7 @@ body{
     color: white;
 }
 
-}
+} */
 
 .home-button{
     font-family: 'Raleway', sans-serif;
