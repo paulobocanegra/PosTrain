@@ -42,8 +42,8 @@
     </div>
     <div class="outter-wrapper">
         <div>
-            <button class="home-button" onclick="instructionAppend('instructions-container');">INSTRUCTIONS</button>
-            <button  class="home-button" id="start-button" onclick="startTraining('training');">START TRAINING</button>
+            <button class="home-button" onclick="instructionAppend('instructions-container');">Instructions</button>
+            <button  class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button>
         </div>
         <div class="main-wrapper" id="training">
             <div class="top" id="top">
@@ -77,15 +77,19 @@
                 </div>
                 <div class="current-order-container">
                     <div id="order-taken">
-                        <div class="order-taken-title">ORDER# </div>
+                        <div class="order-taken-title"> 
+                            <h1>Current Order: </h1>
                             <ul class="items-ordered-container">
                                 <!-- CLASS FOR LI class="items-ordered" -->
                             </ul>
+                        </div>
                             <!-- <ul class="items-ordered"></ul>
                             <ul class="items-ordered"></ul>
                             <ul class="items-ordered"></ul>
                             <ul class="items-ordered"></ul> -->
-                            <button onclick="fireOrder()">Fire!</button>
+                            <div>
+                                <button class="fire-button" onclick="fireOrder()">Fire!</button>
+                            </div>
                     </div>
                 </div>
                 <div class="bottom" id="bottom">
