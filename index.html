@@ -40,83 +40,85 @@
             </ul>
         </div>
     </div>
-    <div class="outter-wrapper">
-        <div class="outter-wrapper-container">
+    <div class="main-wrapper">
+        <div class="buttons-container">
             <button class="home-button" onclick="instructionAppend('instructions-container');">Instructions</button>
-            <button  class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button>
+            <button class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button>
         </div>
-        <div class="main-wrapper" id="training">
-            <div class="top" id="top">
-                <div class="random-input-container" id="random-order"></div>
-                <div class="timer-container">
-                    <div class="time" id="timer"></div>
+        <div class="outter-wrapper">
+            <div  id="training">
+                <div class="top" id="top">
+                    <div class="random-input-container" id="random-order"></div>
+                    <div class="timer-container">
+                        <div class="time" id="timer"></div>
+                    </div>
                 </div>
-            </div>
-                
-            <div class="middle" id="middle">
-                <div class="menu-container">
-                    <div class="menu-buttons-container">
-                        <button onclick="populateCategories(startersArray);" class="menu-button first-button">Starters</button>
-                        <button onclick="populateCategories(greensArray);" class="menu-button">Greens</button>
-                        <button onclick="populateCategories(seafoodArray);" class="menu-button">Seafood</button>
-                        <button onclick="populateCategories(meatsArray);" class="menu-button">Meats</button>
-                        <button onclick="populateCategories(dessertsArray);" class="menu-button">Desserts</button>
-                        <button onclick="populateCategories(drinksArray);" class="menu-button last-button">Drinks</button>
-                    </div>
-                    <div class="menu-items">
-                        <ul class="items">
-                            
-                        </ul>
-                    </div>
-                    <div class="menu-items2">
-                        <ul class="sub-items">
-
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="current-order-container">
-                    <div id="order-taken">
-                        <div class="order-taken-title"> 
-                            <h1>Current Order: </h1>
-                            <ul class="items-ordered-container">
-                                <!-- CLASS FOR LI class="items-ordered" -->
+                    
+                <div class="middle" id="middle">
+                    <div class="menu-container">
+                        <div class="menu-buttons-container">
+                            <button onclick="populateCategories(startersArray);" class="menu-button first-button">Starters</button>
+                            <button onclick="populateCategories(greensArray);" class="menu-button">Greens</button>
+                            <button onclick="populateCategories(seafoodArray);" class="menu-button">Seafood</button>
+                            <button onclick="populateCategories(meatsArray);" class="menu-button">Meats</button>
+                            <button onclick="populateCategories(dessertsArray);" class="menu-button">Desserts</button>
+                            <button onclick="populateCategories(drinksArray);" class="menu-button last-button">Drinks</button>
+                        </div>
+                        <div class="menu-items">
+                            <ul class="items">
+                                
                             </ul>
                         </div>
-                            <!-- <ul class="items-ordered"></ul>
-                            <ul class="items-ordered"></ul>
-                            <ul class="items-ordered"></ul>
-                            <ul class="items-ordered"></ul> -->
-                            <div>
-                                <button class="fire-button" id="fire-button" onclick="handleClick()">Fire!</button>
-                            </div>
-                    </div>
-                </div>
-                <div class="bottom" id="bottom">
-                    <div class="kitchen-order-container">
-                        <div class="orders-sent">Ticket #1
-                            <div id="1" class="verifier"></div>
-                        </div>
-                        <div class="orders-sent">Ticket #2
-                            <div id="2" class="verifier"></div>
-                        </div>
-                        <div class="orders-sent">Ticket #3
-                            <div id="3" class="verifier"></div>
-                        </div>
-                        <div class="orders-sent">Ticket #4
-                            <div id="4" class="verifier"></div>
-                        </div>
-                        <div class="orders-sent">Ticket #5
-                            <div id="5" class="verifier"></div>
-                        </div>
-                        <div class="orders-sent">Ticket #6
-                            <div id="6" class="verifier"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="menu-items2">
+                            <ul class="sub-items">
 
-    
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="current-order-container">
+                        <div id="order-taken">
+                            <div class="order-taken-title"> 
+                                <h1>Current Order: </h1>
+                                <ul class="items-ordered-container">
+                                    <!-- CLASS FOR LI class="items-ordered" -->
+                                </ul>
+                            </div>
+                                <!-- <ul class="items-ordered"></ul>
+                                <ul class="items-ordered"></ul>
+                                <ul class="items-ordered"></ul>
+                                <ul class="items-ordered"></ul> -->
+                                <div>
+                                    <button class="fire-button" id="fire-button" onclick="handleClick()">Fire!</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="bottom" id="bottom">
+                        <div class="kitchen-order-container">
+                            <div class="orders-sent">Ticket #1
+                                <div id="1" class="verifier"></div>
+                            </div>
+                            <div class="orders-sent">Ticket #2
+                                <div id="2" class="verifier"></div>
+                            </div>
+                            <div class="orders-sent">Ticket #3
+                                <div id="3" class="verifier"></div>
+                            </div>
+                            <div class="orders-sent">Ticket #4
+                                <div id="4" class="verifier"></div>
+                            </div>
+                            <div class="orders-sent">Ticket #5
+                                <div id="5" class="verifier"></div>
+                            </div>
+                            <div class="orders-sent">Ticket #6
+                                <div id="6" class="verifier"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        
+            </div>
         </div>
     </div>
     <script src="/lib/logic/initialize-game.js"></script>

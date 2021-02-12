@@ -7,7 +7,7 @@
     height: 100%;
     width: 12%;
     left: 85%;
-    height: 600px;
+    /* height: 600px; */
     bottom: 0px
 }
 
@@ -34,4 +34,10 @@
     height: 12%;
     border: 1px solid rgba(128, 128, 128, 0.514);
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 414px) {  
+    .bottom{
+        margin: 0px 0px 0px 1%
+    }
 }
