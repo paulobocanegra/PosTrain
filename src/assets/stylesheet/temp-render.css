@@ -40,8 +40,9 @@
 }
 
 
-/* @media only screen and (max-width: 1024px) {  
+@media only screen and (max-width: 1024px) {  
     #instructions-container{
-        width: 100vw;
+        left: 1em;
+        width: 59.5em;
     }
-} */
+}

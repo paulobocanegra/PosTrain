@@ -279,17 +279,6 @@
     align-items: center;
 }
 
-
-@media only screen and (max-width: 836px) {  
-    .current-order-container{
-        margin-right: 9.5em;
-    }
-
-    .items-ordered{
-        font-size: 13px;
-    }
-}
-
 @media only screen and (max-width: 414px) {  
 
     .menu-button{
@@ -330,6 +319,17 @@
 
     .verifier{
         margin: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 836px) {  
+    .current-order-container{
+        margin-right: 9.5em;
+    }
+
+    .items-ordered{
+        font-size: 13px;
     }
 }
 
