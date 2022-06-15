@@ -12,6 +12,7 @@ body{
 }
 
 #training{
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,12 +51,6 @@ body{
     /* animation: word 11s infinite; */
 }
 
-/* @keyframes word {
-  from {font-size: 30px;}
-  50%  {font-size: 40px !important;} 
-  to   {font-size: 50px;}
-} */
-
 .timer-container{
     height: 90%;
     width: 7%;
@@ -78,72 +73,10 @@ body{
     color: white;
     font-weight: 700;
     
-    /* animation: blink 11s infinite;
-    -webkit-animation: blink 11s infinite; */
 }
 
-/* @keyframes blink{
-0% {
-    background-color: red;
-    border: 5px solid white;
-    color: white;
-}
-10% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-20% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-30% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-40% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-50% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-60% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-70% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-80% {
-    background-color: black;
-    color: rgb(209 255 0);
-    border: 5px solid rgb(209 255 0);
-}
-90% {
-    background-color: red;
-    border: 5px solid white;
-    color: white;
-}
-100% {
-    background-color: red;
-    border: 5px solid white;
-    color: white;
-}
-
-} */
 
 .home-button{
-    /* font-family: 'Raleway', sans-serif; */
-    /* height: 50px; */
     border-radius: 10px;
     border: none;
     background-color: rgb(245,73,89);
@@ -158,62 +91,6 @@ body{
     background-color: rgb(196, 47, 62);
 }
 
-/* for ipad */
-/* @media only screen and (max-width: 1250px) {  
-
-    #training{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90vw;
-        height: 680px;
-        background-color: rgb(15, 15, 15);
-        border-radius: 5px;
-    }
-
-} */
-
-/* @media screen and (min-width: 300px) and (max-width: 768px) and (orientation: portrait) {
-  body {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    top: 90%;
-    left: 0;
-  }
-    .outter-wrapper{
-        width: 100vh;
-        height: 100vw;
-    }
-
-    #training{
-        width: 100%;
-        height: 100%;
-    }
-} */
-/* 
-@media screen and (min-width: 300px) and (max-width: 768px) and (orientation: portrait) {
-  body {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100%;
-    overflow-x: hidden;
-    position: absolute;
-    top: 90%;
-    left: 0;
-  }
-  .outter-wrapper{
-        width: 100vh;
-        height: 100vw;
-  }
-
-    #training{
-        width: 100vh;
-        height: 100vw;
-    }
-} */
 .main-wrapper{
     display: flex;
     flex-direction: column;
@@ -224,6 +101,21 @@ body{
 .buttons-container{
     display: flex;
     flex-direction: row;
+}
+
+#start-training{
+    height: 40%;
+    width: 100px;
+    background-color: rgb(245,73,89);
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px;
+    /* font-family: 'Manrope', sans-serif; */
+}
+
+#start-training:hover{
+    background-color: rgb(196, 47, 62);
 }
 
 @media only screen and (max-width: 414px)  {  
@@ -279,7 +171,6 @@ body{
         height: 89vw;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: flex-start;
     }
     #training{
@@ -307,3 +198,4 @@ body{
         height: 100vw;
     }
 }
+
