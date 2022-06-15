@@ -34,17 +34,18 @@
                 <li>One random will item from our menu will appear at the top</li>
                 <li>You will have some time to find it and add it to the order of the customer</li>
                 <li>Once you are ready to confirm the order, press "Order Ready"</li>
-                <li>At the bottom of the screen the order will display, ✅  or ❌  if there was a mistake with the order</li>
-                <li>As training progresses, the time you've got will decrease and amount of items will increase</li>
-                <li>If you miss 3 orders, we invite you sharpen your order taking skills. <br> But don't worry, we can assure you all it takes is some practice! :)</li>
-                <li>The purpose of this training is to maximize your time efficiency when taking orders in order for you to focus on what we care the most, <br> guests and team. </li>
+                <li>At the right of the screen the order will display, ✅  or ❌  if there was a mistake with the order</li>
+                <!-- <li>As training progresses, the time you've got will decrease and amount of items will increase</li> -->
+                <li>If you miss 3 orders, we invite you sharpen your order taking skills. <br> But don't worry, we can assure you all it takes is some practice!</li>
+                <li>The purpose of this training is to maximize your time efficiency when taking orders in order for you to focus on what we care the most, <br> our guests and team. </li>
             </ul>
         </div>
     </div>
     <div class="main-wrapper">
         <div class="buttons-container">
             <button class="home-button" onclick="instructionAppend('instructions-container');">Instructions</button>
-            <button class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button>
+            <button class="home-button" id="start-button" onclick="posAppend('training');">Show POS</button>
+            <!-- <button class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button> -->
         </div>
         <div class="outter-wrapper">
             <div  id="training">
@@ -53,6 +54,8 @@
                     <div class="timer-container">
                         <div class="time" id="timer"></div>
                     </div>
+                    <button id="start-training">Start Training</button>
+                    <!-- <button id="end-training">End Training</button> -->
                 </div>
                     
                 <div class="middle" id="middle">
