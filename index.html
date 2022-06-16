@@ -29,23 +29,22 @@
 <body>
     <div class="landing-render">
         <div id="instructions-container">
-            <button id="x" class="close-instructions">X</button>
+            <button id="x" class="close-instructions">x</button>
             <ul class="instructions-list">
                 <li>Instructions:</li>
-                <li>One random will item from our menu will appear at the top</li>
-                <li>You will have some time to find it and add it to the order of the customer</li>
-                <li>Once you are ready to confirm the order, press "Order Ready"</li>
+                <li>One random will item from our menu will appear at the top.</li>
+                <li>You will have some time to find it and add it to the order of the customer.</li>
+                <li>Once you are ready to confirm the order, press send.</li>
                 <li>At the right of the screen the order will display, ✅  or ❌  if there was a mistake with the order</li>
                 <!-- <li>As training progresses, the time you've got will decrease and amount of items will increase</li> -->
-                <li>If you miss 3 orders, we invite you sharpen your order taking skills. <br> But don't worry, we can assure you all it takes is some practice!</li>
-                <li>The purpose of this training is to maximize your time efficiency when taking orders in order for you to focus on what we care the most, <br> our guests and team. </li>
+                <li>The purpose of this training is to maximize the time efficiency when taking orders.</li>
             </ul>
         </div>
     </div>
     <div class="main-wrapper">
         <div class="buttons-container">
             <button class="home-button" onclick="instructionAppend('instructions-container');">Instructions</button>
-            <button class="home-button" id="start-button" onclick="posAppend('training');">Show POS</button>
+            <button class="home-button" id="start-button" onclick="posAppend('training');">POS</button>
             <!-- <button class="home-button" id="start-button" onclick="startTraining('training');">Start Training</button> -->
         </div>
         <div class="outter-wrapper">
@@ -55,13 +54,13 @@
                     <div class="timer-container">
                         <div class="time" id="timer"></div>
                     </div>
-                    <button id="start-training">Start Training</button>
+                    <button id="start-training">Start</button>
                     <!-- <button id="end-training">End Training</button> -->
                 </div>
                     
                 <div class="middle" id="middle">
                     <div class="menu-container">
-                        <div class="menu-buttons-container">
+                        <div id="hide-first" class="menu-buttons-container">
                             <button onclick="populateCategories(startersArray);" class="menu-button first-button">Starters</button>
                             <button onclick="populateCategories(greensArray);" class="menu-button">Greens</button>
                             <button onclick="populateCategories(seafoodArray);" class="menu-button">Seafood</button>
@@ -84,7 +83,7 @@
                     <div class="current-order-container">
                         <div id="order-taken">
                             <div class="order-taken-title"> 
-                                <h1>Current Order: </h1>
+                                <h1>current order: </h1>
                                 <ul class="items-ordered-container">
                                     <!-- CLASS FOR LI class="items-ordered" -->
                                 </ul>
@@ -94,28 +93,28 @@
                                 <ul class="items-ordered"></ul>
                                 <ul class="items-ordered"></ul> -->
                                 <div>
-                                    <button class="fire-button" id="fire-button" onclick="handleClick()">Fire!</button>
+                                    <button class="fire-button" id="fire-button" onclick="handleClick()">Send</button>
                                 </div>
                         </div>
                     </div>
                     <div class="bottom" id="bottom">
                         <div class="kitchen-order-container">
-                            <div class="orders-sent">Ticket #1
+                            <div class="orders-sent">order 1
                                 <div id="1" class="verifier"></div>
                             </div>
-                            <div class="orders-sent">Ticket #2
+                            <div class="orders-sent">order 2
                                 <div id="2" class="verifier"></div>
                             </div>
-                            <div class="orders-sent">Ticket #3
+                            <div class="orders-sent">order 3
                                 <div id="3" class="verifier"></div>
                             </div>
-                            <div class="orders-sent">Ticket #4
+                            <div class="orders-sent">order 4
                                 <div id="4" class="verifier"></div>
                             </div>
-                            <div class="orders-sent">Ticket #5
+                            <div class="orders-sent">order 5
                                 <div id="5" class="verifier"></div>
                             </div>
-                            <div class="orders-sent">Ticket #6
+                            <div class="orders-sent">order 6
                                 <div id="6" class="verifier"></div>
                             </div>
                         </div>
