@@ -16,10 +16,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    width: 95vw;
     height: 680px;
     background-color: rgb(15, 15, 15);
-    border-radius: 5px;
+    border-radius: 10px;
+    /* border: 5px solid rgb(0, 0, 0); */
+    padding: 10px;
 }
 
 .top{
@@ -101,9 +103,10 @@ body{
 .buttons-container{
     display: flex;
     flex-direction: row;
+    position: absolute;
 }
 
-#start-training{
+#close-pos{
     height: 40px;
     width: 100px;
     background-color: rgb(209 255 0);
@@ -116,7 +119,7 @@ body{
     font-family: 'Manrope', sans-serif;;
 }
 
-#start-training:hover{
+#close-pos:hover{
     background-color: rgb(72,61,139);
     color: white;
     cursor: pointer;

@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=ZCOOL+QingKe+HuangYou&display=swap"
     rel="stylesheet">
-    <script src="/lib/logic/initialize-game.js"></script>
+    <script src="/lib/logic/initializeGame.js"></script>
     
     <title>POSTrain</title>
 </head>
@@ -50,15 +50,15 @@
         </div>
         <div class="outter-wrapper">
             <div  id="training">
-                <div class="top" id="top">
+                <!-- <div class="top" id="top">
                     <div class="random-input-container" id="random-order"></div>
                     <div class="timer-container">
                         <div class="time" id="timer"></div>
                     </div>
-                    <button id="start-training">Start</button>
-                    <!-- <button id="end-training">End Training</button> -->
-                </div>
-                    
+                </div> -->
+                <!-- <button id="x" class="close-instructions">x</button> -->
+                <button id="close-pos">Back</button>
+
                 <div class="middle" id="middle">
                     <div class="menu-container">
                         <div id="hide-first" class="menu-buttons-container">
@@ -89,10 +89,6 @@
                                     <!-- CLASS FOR LI class="items-ordered" -->
                                 </ul>
                             </div>
-                                <!-- <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul> -->
                                 <div>
                                     <button class="fire-button" id="fire-button" onclick="handleClick()">Send</button>
                                 </div>
@@ -126,10 +122,10 @@
             </div>
         </div>
     </div>
-    <script src="/lib/logic/top-logic.js"></script>
+    <script src="/lib/logic/topLogic.js"></script>
     <script src="/lib/logic/categories.js"></script>
-    <script src="/lib/logic/middle-logic.js"></script>
-    <script src="/lib/logic/bottom-logic.js"></script>
+    <script src="/lib/logic/middleLogic.js"></script>
+    <script src="/lib/logic/dataAnalytics.js"></script>
 </body>
 </html>
 
