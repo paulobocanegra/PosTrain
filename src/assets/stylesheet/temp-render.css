@@ -34,6 +34,10 @@
     z-index: 1;
 }
 
+.order-container  li {
+    margin: 10px;
+}
+
 .instructions-list > li {
     font-size: 17px;
     margin: 13px;
