@@ -36,6 +36,11 @@
     border-radius: 5px;
 }
 
+.orders-sent:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+
 @media only screen and (max-width: 414px) {  
     .bottom{
         margin: 0px 0px 0px 1%
