@@ -20,14 +20,12 @@ body{
     height: 680px;
     background-color: rgb(15, 15, 15);
     border-radius: 10px;
-    /* border: 5px solid rgb(0, 0, 0); */
     padding: 10px;
 }
 
 .top{
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
     align-items: center;
     align-content: center;
     height: 10%;
@@ -50,30 +48,8 @@ body{
     color: white;
     font-family: 'Raleway', sans-serif;
     border: 5px solid rgb(34, 29, 72);
-    /* animation: word 11s infinite; */
 }
 
-.timer-container{
-    height: 90%;
-    width: 7%;
-    margin: 2% 4% 0% 4%;
-    border: 5px solid rgb(34, 29, 72);
-    border-radius: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.time{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-    color: white;
-    font-weight: 700;
-    
-}
 
 
 .home-button{
