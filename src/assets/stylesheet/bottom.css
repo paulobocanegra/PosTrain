@@ -14,7 +14,8 @@
 .kitchen-order-container{
     height: 100%;
     width: 100%;
-    background-color: whitesmoke;
+    background-color: black;
+    /* background-color: rgb(128, 128, 128, 0.5); */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -27,6 +28,8 @@
 .orders-sent{
     font-family: 'Manrope', sans-serif;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 6%;
     background-color: white;
@@ -34,6 +37,7 @@
     height: 12%;
     border: 1px solid rgba(128, 128, 128, 0.514);
     border-radius: 5px;
+    padding: 5px;
 }
 
 .orders-sent:hover{
