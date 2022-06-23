@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=ZCOOL+QingKe+HuangYou&display=swap"
     rel="stylesheet">
-    <script src="/lib/logic/initialize-game.js"></script>
+    <script src="/lib/logic/initializeGame.js"></script>
     
     <title>POSTrain</title>
 </head>
@@ -32,13 +32,11 @@
             <button id="x" class="close-instructions">x</button>
             <ul class="instructions-list">
                 <li>Instructions:</li>
-                <li>Click on POS and start it when you are ready.</li>
-                <li> One random menu item will appear at the top.</li>
-                <li>You will have some time to find each one.</li>
-                <li>Click on send when the order is complete.</li>
-                <li>✅  or ❌ will indicate the result for each ticket sent.</li>
-                <!-- <li>As training progresses, the time you've got will decrease and amount of items will increase</li> -->
-                <li>The purpose of this training is to maximize the time efficiency when taking orders.</li>
+                <li>Click on POS to open the Point of Sale.</li>
+                <li>Some menu items will require specifications</li>
+                <li>Click send when the order is complete.</li>
+                <li>✅  will indicate the order was sent.</li>
+                <li>Click on any order with a ✅ to see details from previous orders</li>
             </ul>
         </div>
     </div>
@@ -50,15 +48,15 @@
         </div>
         <div class="outter-wrapper">
             <div  id="training">
-                <div class="top" id="top">
+                <!-- <div class="top" id="top">
                     <div class="random-input-container" id="random-order"></div>
                     <div class="timer-container">
                         <div class="time" id="timer"></div>
                     </div>
-                    <button id="start-training">Start</button>
-                    <!-- <button id="end-training">End Training</button> -->
-                </div>
-                    
+                </div> -->
+                <!-- <button id="x" class="close-instructions">x</button> -->
+                <button id="close-pos">Back</button>
+
                 <div class="middle" id="middle">
                     <div class="menu-container">
                         <div id="hide-first" class="menu-buttons-container">
@@ -89,10 +87,6 @@
                                     <!-- CLASS FOR LI class="items-ordered" -->
                                 </ul>
                             </div>
-                                <!-- <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul>
-                                <ul class="items-ordered"></ul> -->
                                 <div>
                                     <button class="fire-button" id="fire-button" onclick="handleClick()">Send</button>
                                 </div>
@@ -100,23 +94,23 @@
                     </div>
                     <div class="bottom" id="bottom">
                         <div class="kitchen-order-container">
-                            <div class="orders-sent">order 1
-                                <div id="1" class="verifier"></div>
+                            <div class="orders-sent" id="1">order 1
+                                <!-- <div  class="verifier"></div> -->
                             </div>
-                            <div class="orders-sent">order 2
-                                <div id="2" class="verifier"></div>
+                            <div class="orders-sent" id="2">order 2
+                                <!-- <div class="verifier"></div> -->
                             </div>
-                            <div class="orders-sent">order 3
-                                <div id="3" class="verifier"></div>
+                            <div class="orders-sent" id="3">order 3
+                                <!-- <div class="verifier"></div> -->
                             </div>
-                            <div class="orders-sent">order 4
-                                <div id="4" class="verifier"></div>
+                            <div class="orders-sent" id="4">order 4
+                                <!-- <div class="verifier"></div> -->
                             </div>
-                            <div class="orders-sent">order 5
-                                <div id="5" class="verifier"></div>
+                            <div class="orders-sent" id="5">order 5
+                                <!-- <div class="verifier"></div> -->
                             </div>
-                            <div class="orders-sent">order 6
-                                <div id="6" class="verifier"></div>
+                            <div class="orders-sent" id="6">order 6
+                                <!-- <div class="verifier"></div> -->
                             </div>
                         </div>
                     </div>
@@ -126,10 +120,10 @@
             </div>
         </div>
     </div>
-    <script src="/lib/logic/top-logic.js"></script>
+    <script src="/lib/logic/topLogic.js"></script>
     <script src="/lib/logic/categories.js"></script>
-    <script src="/lib/logic/middle-logic.js"></script>
-    <script src="/lib/logic/bottom-logic.js"></script>
+    <script src="/lib/logic/middleLogic.js"></script>
+    <script src="/lib/logic/dataAnalytics.js"></script>
 </body>
 </html>
 
